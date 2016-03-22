@@ -1,0 +1,77 @@
+body {
+  background-color: #f2f2f2!important;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+h1, h2, h3, li {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p, a {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+p {
+  color: #404040;
+}
+
+a {
+  color: #a00000;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.navbar-brand {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.container {
+  padding: 5px 5px 5px 5px;
+  width: 80%;
+  margin: auto;
+}
+
+.profile {
+    width: 225px;
+    height: 225px;
+}
+
+.emphasis {
+    font-family: Consolas, monaco, monospace;
+    word-wrap: break-word;
+    word-break: break-all;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+}
+
+/* http://mystrd.at/modern-clean-css-sticky-footer */
+html {
+    position:relative;
+    min-height:100%;
+}
+body {
+    margin:0 0 100px; /* bottom = footer height */
+    padding-top: 89px;
+}
+
+footer {
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:30px;
+    width:100%;
+    background-color:#ccc;
+    text-align:center;
+    padding:5px;
+}
+/* End Sticky Footer */

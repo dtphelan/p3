@@ -1,19 +1,23 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
+use Badcow\LoremIpsum\Generator as LoremGenerator;
+use Illuminate\Http\Request;
 class LoremIpsumController extends Controller {
 
     public function getLoremIpsum() {
-        $view  = '<form method="POST">';
-        $view .= csrf_field();
-        $view .= 'Input field for Loem Ipsum: <input type="text" name="input">';
-        $view .= '<input type="submit">';
-        $view .= '</form>';
-        return $view;
+        return view('loremipsum.index');
     }
 
-    public function postLoremIpsum() {
-        return 'Your input: '.$_POST['input'];
+    public function postLoremIpsum(Request $request) {
+        if(isset($_POST['paras'])) {
+            $paras = $_POST['paras'];
+        }
+
+        $generator = new LoremGenerator();
+        $paragraphs = $generator->getParagraphs($paras);
+
+        return view('loremipsum.index')->with('paragraphs',$paragraphs);
     }
 
 }
