@@ -26,7 +26,7 @@
 
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,6 +47,12 @@
         </div>
       </div>
     </nav>
+
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/">P3</a></li>
+        <li role="presentation"><a href="/loremipsum">Lorem Ipsum</a></li>
+        <li role="presentation"><a href="/randomuser">Random Users</a></li>
+    </ul>
 
     <section>
         <div class='container'>

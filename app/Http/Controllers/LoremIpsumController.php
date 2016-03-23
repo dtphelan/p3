@@ -10,12 +10,12 @@ class LoremIpsumController extends Controller {
     }
 
     public function postLoremIpsum(Request $request) {
-        if(isset($_POST['paras'])) {
-            $paras = $_POST['paras'];
+        if(isset($_POST['number'])) {
+            $number = $_POST['number'];
         }
 
         $generator = new LoremGenerator();
-        $paragraphs = $generator->getParagraphs($paras);
+        $paragraphs = $generator->getParagraphs($number);
 
         return view('loremipsum.index')->with('paragraphs',$paragraphs);
     }

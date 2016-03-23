@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Lorem Ipsum
+    Random Users
 @stop
 
 @section('head')
@@ -11,20 +11,20 @@
 
 @section('content')
 
-    <form method='POST' action='/loremipsum'>
+    <form method='POST' action='/randomuser'>
 
        <input type='hidden' value='{{ csrf_token() }}' name='_token'>
 
         <div class='col-md-3 col-sm-6'>
             <div class='input-group'>
-                <span class='input-group-addon' id='basic-addon1'>Paragraphs</span>
+                <span class='input-group-addon' id='basic-addon1'>Number</span>
                 <input type='number' name='number' class='form-control'>
                 </input>
             </div>
         </div>
         <div class='col-md-3 col-sm-6'>
             <div class='input-group'>
-                <button type='submit' class='btn btn-primary'>Gimme' some text</button>
+                <button type='submit' class='btn btn-primary'>Gimme' some users</button>
             </div>
         </div>
     </form>
@@ -35,11 +35,15 @@
 
     @if(isset($_POST['number']))
         <div class='col-md-6'>
-            <p><?php echo implode('<br><p>', $paragraphs); ?>
+            <p>
+                <?php for($i=0; $i < $number; $i++) { ?>
+                    <?php echo '<p>'.$faker->name.'</p>'; ?>
+                <?php } ?>
+            </p>
         </div>
     @else
         <div class='col-md-6'>
-            <p>What are you waiting for? Get some Latin!</p>
+            <p>What are you waiting for? Get some users!</p>
         </div>
     @endif
 

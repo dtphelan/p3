@@ -1,19 +1,22 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
+use Faker\Factory as Faker;
+use Illuminate\Http\Request;
 class RandomUserController extends Controller {
 
     public function getRandomUser() {
-        $view  = '<form method="POST">';
-        $view .= csrf_field();
-        $view .= 'Input field for Random Users: <input type="text" name="input">';
-        $view .= '<input type="submit">';
-        $view .= '</form>';
-        return $view;
+        return view('randomuser.index');
     }
 
-    public function postRandomUser() {
-        return 'Your input: '.$_POST['input'];
+    public function postRandomUser(Request $request) {
+        if(isset($_POST['number'])) {
+            $number = $_POST['number'];
+        }
+
+        $faker = Faker::create();
+
+        return view('randomuser.index')->with('faker',$faker)->with('number',$number);
     }
 
 }
