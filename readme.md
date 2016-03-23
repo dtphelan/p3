@@ -18,6 +18,7 @@ List of code
 - [ ] Record demo screencast
 - [ ] Run through HTML validator
 - [ ] List outside code
+
 ### Optionals
 - [ ] Extra user info
 - [ ] More lorem ipsum options
