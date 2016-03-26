@@ -54,6 +54,11 @@ a {
     padding: 5px 5px 5px 5px;
 }
 
+.fakerImage {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
 /* http://mystrd.at/modern-clean-css-sticky-footer */
 html {
     position:relative;

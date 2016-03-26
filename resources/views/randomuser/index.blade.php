@@ -11,23 +11,25 @@
 
 @section('content')
 
-    <form method='POST' action='/randomuser'>
+    <div>
+        <form method='POST' action='/randomuser'>
 
-       <input type='hidden' value='{{ csrf_token() }}' name='_token'>
+           <input type='hidden' value='{{ csrf_token() }}' name='_token'>
 
-        <div class='col-md-3 col-sm-6'>
-            <div class='input-group'>
-                <span class='input-group-addon' id='basic-addon1'>Number</span>
-                <input type='number' name='number' class='form-control'>
-                </input>
+            <div class='col-md-3 col-sm-6'>
+                <div class='input-group'>
+                    <span class='input-group-addon' id='basic-addon1'>Number of Users</span>
+                    <input type='number' name='number' class='form-control' value='<?php if(null !== old('number')) echo old('number'); else echo $number; ?>'>
+                    </input>
+                </div>
             </div>
-        </div>
-        <div class='col-md-3 col-sm-6'>
-            <div class='input-group'>
-                <button type='submit' class='btn btn-primary'>Gimme' some users</button>
+            <div class='col-md-3 col-sm-6'>
+                <div class='input-group'>
+                    <button type='submit' class='btn btn-primary'>Gimme' some users</button>
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 
     <div class='col-md-6'>
         <p>Here's a nice description of what the page does.</p>

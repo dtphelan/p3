@@ -12,7 +12,7 @@ List of code
 
 ## To-Do
 ### MVP
-- [ ] Server-side Validation
+- [x] Server-side Validation
 - [ ] Landing page
 - [ ] Page descriptions
 - [ ] Record demo screencast
@@ -24,3 +24,5 @@ List of code
 - [ ] More lorem ipsum options
 - [ ] Password generator from P2
 - [ ] Styling
+- [ ] Laravel seeder export?
+- [ ] Error messages
