@@ -2,7 +2,7 @@
 
 
 @section('title')
-    Index
+    DWA 15 P3
 @stop
 
 @section('head')
@@ -13,6 +13,6 @@
 <h2>DWA 15 P3 - Developer's Best Friend</h2>
 
 <div>
-    <p>Generate Lorem Ipsum, or random users, or both.</p>
+    <p>Generate lorem ipsum or random users. Marvel at the simplicity of it all.</p>
 </div>
 @stop

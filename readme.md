@@ -8,16 +8,19 @@
 Will update when complete.
 
 ## Outside code
-List of code
+Uses the [Badcow lorem ipsum generator](https://packagist.org/packages/badcow/lorem-ipsum) to generate lorem ipsum.
+[Faker](https://packagist.org/packages/fzaninotto/faker) makes the fake users.
+[Bootstrap](https://getbootstrap.com/) is used for styling.
+Footer courtesy of [http://mystrd.at/modern-clean-css-sticky-footer/](http://mystrd.at/modern-clean-css-sticky-footer/).
 
 ## To-Do
 ### MVP
 - [x] Server-side Validation
-- [ ] Landing page
-- [ ] Page descriptions
+- [x] Landing page
+- [x] Page descriptions
 - [ ] Record demo screencast
-- [ ] Run through HTML validator
-- [ ] List outside code
+- [x] Run through HTML validator
+- [x] List outside code
 
 ### Optionals
 - [ ] Extra user info

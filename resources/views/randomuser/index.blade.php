@@ -11,6 +11,10 @@
 
 @section('content')
 
+    <div class='col-md-6'>
+        <p>Generate the names of up to 100 random users.</p>
+    </div>
+
     <div>
         <form method='POST' action='/randomuser'>
 
@@ -29,10 +33,6 @@
                 </div>
             </div>
         </form>
-    </div>
-
-    <div class='col-md-6'>
-        <p>Here's a nice description of what the page does.</p>
     </div>
 
     @if(isset($_POST['number']))

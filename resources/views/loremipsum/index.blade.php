@@ -11,6 +11,10 @@
 
 @section('content')
 
+    <div class='col-md-6'>
+        <p>Generate up to 10 paragraphs of lorem ipsum text. Use it as filler, but never try to explain it to someone who isn't a designer/developer.</p>
+    </div>
+
     <div>
         <form method='POST' action='/loremipsum'>
            <input type='hidden' value='{{ csrf_token() }}' name='_token'>
@@ -28,10 +32,6 @@
                 </div>
             </div>
         </form>
-    </div>
-
-    <div class='col-md-6'>
-        <p>Here's a nice description of what the page does.</p>
     </div>
 
     @if(isset($_POST['number']))
