@@ -5,7 +5,7 @@
 [p3.danielphelan.me](http://p3.danielphelan.me)
 
 ## Demo Video
-Will update when complete.
+[Demo video here.](http://screencast.com/t/tvpiWT8miJ)
 
 ## Outside code
 Uses the [Badcow lorem ipsum generator](https://packagist.org/packages/badcow/lorem-ipsum) to generate lorem ipsum.
@@ -18,7 +18,7 @@ Footer courtesy of [http://mystrd.at/modern-clean-css-sticky-footer/](http://mys
 - [x] Server-side Validation
 - [x] Landing page
 - [x] Page descriptions
-- [ ] Record demo screencast
+- [x] Record demo screencast
 - [x] Run through HTML validator
 - [x] List outside code
 
