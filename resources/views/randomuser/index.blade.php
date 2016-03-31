@@ -35,6 +35,9 @@
         </form>
     </div>
 
+    <br>
+    <br>
+
     @if(isset($_POST['number']))
         <div class='col-md-6'>
             <p>
